@@ -1,0 +1,19 @@
+1、vector
+	初始化：
+	int arr[arraySize] = {1, 2, 3, 4, 5, 6, 7};
+	vector<int> ivec(arr, arr + arraySize);
+	vector连续内存，push_back可能造成内存重新配置，继而导致迭代器失效
+	
+2、auto_ptr
+	auto_ptr<string> ps(new string("nimahi"));		//生命周期结束会自动释放
+3、
+	
+4、prioirty_queue
+	有权值观念的queue，只允许在底端加入元素，从顶端取出元素
+	
+5、map、set
+	底层是一颗红黑树（RB Tree），二叉平衡搜索树，相比其它树，平衡条件和旋转操作更简单，性能更高
+	
+	关联式容器，应使用其所提供的find函数来搜索元素，会比STL算法find更有效率，因为STL算法find()只是循序搜索
+	
+	map的所有元素都是pair
